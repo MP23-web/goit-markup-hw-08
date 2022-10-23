@@ -14,11 +14,12 @@ ul {
 
 .link {
     font-family: 'Raleway', sans-serif;
+    text-decoration: none;
 }
 .logo, .logo-footer { 
     color: var(--secondary-color);
     font size: 26px;
-    line height: 1,2;
+    line height: 1.2;
     
 }
 .accent {
@@ -32,7 +33,7 @@ ul {
 .site-nav .link {
     color: var(--primary-text-color);
     font size: 14px;
-    line height: 1,14;
+    line height: 1.14;
 }
 .site-nav .link:hover,
 .site-nav .link:focus{
@@ -58,8 +59,7 @@ ul {
     color: var(--white-color);
     background-color: #2F303A;
     font size: 44px;
-    line height: 1,36;
-    line weight: 900;
+    line height: 1.36;
     text-align: center;
 
 }
@@ -81,33 +81,38 @@ ul {
 .address-item {
     color: var(--white-color);
     font size: 14px;
-    fine height: 1.7;
+    line height: 1.7;
 }
 .button {
     color: var(--white-color);
     background-color: var(--secondary-color);
 }
-.container {
-    display: none;
-}
+
 
 .button-nav:hover,
 .button-nav:focus {
     color:var(--white-color);
     background-color: var(--secondary-color);
-    text-align: center;
+    font size: 16px;
+    line height: 1.62;
+    align: Center;
+    
    
-}
+ }
+
 
 .title-projects {
     color: #212121;
-    font-family: 'Roboto';
     font size: 18px;
     line height: 2;
+  
 }
 
 .description {
     color: #757575;
     font size: 16px;
-    line height: 1,8;
+    line height: 1.8;
+  
 }
+
+
