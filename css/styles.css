@@ -63,7 +63,14 @@ button {
   padding: 0;
   margin: 0;
   outline: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
+
+.button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -173,6 +180,10 @@ img {
   line-height: 1.7;
 }
 
+.address-footer {
+  margin-bottom: 9px;
+}
+
 .button {
   color: var(--white-color);
   background-color: var(--secondary-color);
@@ -198,6 +209,8 @@ img {
   color: var(--white-color);
   background-color: var(--secondary-color);
   border: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-nav {
@@ -211,6 +224,7 @@ img {
   padding: 10px 32px;
   background-color: #f5f4fa;
   border: none;
+  border-radius: 4px;
 }
 
 .title-projects {
@@ -224,6 +238,7 @@ img {
   color: var(--grey-color);
   font-size: 16px;
   line-height: 1.87;
+  font-family: 'Roboto';
 }
 
 .address {
@@ -277,6 +292,8 @@ img {
   color: var(--white-color);
   background-color: var(--secondary-color);
   border: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .logo {
@@ -296,6 +313,13 @@ img {
   gap: 30px;
   justify-content: center;
 }
+
+.card-project {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
+}
+
 .team {
   display: flex;
 }
@@ -334,6 +358,11 @@ img {
   margin-bottom: 30px;
   text-align: center;
   background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team-item:last-child {
+  margin-right: 0;
 }
 
 /* .cards {
@@ -370,13 +399,17 @@ img {
 }
 
 .card-item {
-  max-width: 322px;
   background-color: #ffffff;
+}
+
+.card-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .image-portfolio {
   width: 370px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .social-link {
@@ -417,7 +450,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.svg-item {
   margin-right: 30px;
+}
+
+.svg-item:last-child {
+  margin-right: 0;
 }
 
 .link-svg-customers:hover,
