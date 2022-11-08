@@ -3,7 +3,7 @@
   --secondary-color: #2196f3;
   --white-color: #ffffff;
   --grey-color: #757575;
-  --time: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --time: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* --item = 3; */
 }
 
@@ -80,6 +80,9 @@ img {
 .link.header {
   font-size: 14px;
   line-height: 1.14;
+  font-weight: 500;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-main {
@@ -107,6 +110,7 @@ img {
 
 .site-nav .link {
   font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.14;
@@ -156,6 +160,7 @@ img {
 .text {
   color: var(--grey-color);
   line-height: 1.7;
+  font-weight: 400;
 }
 .footer {
   background-color: #2f303a;
@@ -192,6 +197,7 @@ img {
   cursor: pointer;
   font-family: inherit;
   outline: none;
+  transition: var(--time);
 }
 
 .button:hover,
@@ -199,7 +205,6 @@ img {
   background-color: #188ce8;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: var(--time);
 }
 
 .button-nav:hover,
@@ -211,7 +216,6 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
   outline: none;
-  transition: var(--time);
 }
 
 .button-nav {
@@ -226,6 +230,7 @@ img {
   background-color: #f5f4fa;
   border: none;
   border-radius: 4px;
+  transition: var(--time);
 }
 
 .title-projects {
@@ -255,6 +260,7 @@ img {
 
 .features-title {
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   margin-bottom: 10px;
   /* margin-right: 30px; */
@@ -269,6 +275,7 @@ img {
 
 .team-title {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.18;
   color: #212121;
   margin-bottom: 10px;
@@ -280,6 +287,7 @@ img {
 
 .team-text {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.18;
   color: var(--grey-color);
   margin-bottom: 16px;
@@ -341,6 +349,7 @@ img {
 .project:hover .features-overlay,
 .project:focus .features-overlay {
   transform: translateY(0);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-text {
@@ -378,14 +387,13 @@ img {
 }
 
 .header.current::after {
-  display: block;
   content: '';
   width: 100%;
   height: 4px;
   background-color: var(--secondary-color);
   position: absolute;
   border-radius: 2px;
-  bottom: -32px;
+  bottom: -1px;
 }
 
 .site-nav {
@@ -465,6 +473,7 @@ img {
   color: var(--white-color);
   font-size: 14px;
   line-height: 1.14;
+  font-weight: 700;
 }
 
 .project:hover,
@@ -496,6 +505,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: var(--time);
 }
 
 .icon {
@@ -507,7 +517,6 @@ img {
   background-color: var(--secondary-color);
   color: var(--white-color);
   outline: none;
-  transition: var(--time);
 }
 
 .link-svg-customers {
@@ -569,6 +578,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: var(--time);
+}
+
+.link-svg-footer:hover,
+.link-svg-footer:focus {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  outline: none;
 }
 
 .item-footer {
@@ -611,19 +628,20 @@ img {
   align-items: center;
 }
 
-.link-svg-footer:hover,
+/* .link-svg-footer:hover,
 .link-svg-footer:focus {
   background-color: var(--secondary-color);
   color: var(--white-color);
   outline: none;
   transition: var(--time);
-}
+} */
 
 .color {
   color: var(--white-color);
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .foot {
@@ -866,12 +884,21 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 16px;
-}
-
-.input-subs::placeholder {
+  color: var(--white-color);
 }
 
 .foot-btn {
   margin-left: 12px;
   padding: 10px 28px;
+}
+
+.check-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot {
+  align-items: center;
+  justify-content: center;
 }
