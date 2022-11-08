@@ -902,3 +902,19 @@ img {
   align-items: center;
   justify-content: center;
 }
+
+.form-foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-foot {
+  margin-left: 10px;
+}
