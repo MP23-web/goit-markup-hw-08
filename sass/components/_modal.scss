@@ -55,7 +55,7 @@
   cursor: pointer;
   outline: none;
   &:hover,
-  &:foccus {
+  &:focus {
     fill: var(--secondary-color);
   }
 }
@@ -106,7 +106,7 @@
   &:focus {
     border-color: var(--secondary-color);
   }
-  &:focus + inpu-.icon {
+  &:focus + .input-icon {
     fill: var(--secondary-color);
   }
   &::placeholder {

@@ -475,6 +475,12 @@ body {
   padding-top: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .team {
   justify-content: center;
   background-color: #f5f4fa;
@@ -723,7 +729,7 @@ body {
   cursor: pointer;
   outline: none;
 }
-.close-btn:hover, .close-btn:foccus {
+.close-btn:hover, .close-btn:focus {
   fill: var(--secondary-color);
 }
 
@@ -774,7 +780,7 @@ body {
 .input:focus {
   border-color: var(--secondary-color);
 }
-.input:focus + inpu-.icon {
+.input:focus + .input-icon {
   fill: var(--secondary-color);
 }
 .input::-moz-placeholder {
