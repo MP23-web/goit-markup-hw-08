@@ -1,0 +1,27 @@
+.clients__svg-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid;
+  color: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover,
+  &:focus {
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+    outline: none;
+    transition: var(--time);
+  }
+}
+
+.clients {
+  padding-top: 94px;
+}
+
+.clients__item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}

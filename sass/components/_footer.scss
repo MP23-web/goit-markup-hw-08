@@ -1,0 +1,125 @@
+.footer {
+  padding-bottom: 0;
+  background-color: #2f303a;
+}
+
+.footer__logo {
+  display: inline-block;
+  color: var(--secondary-color);
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.footer__accent {
+  color: var(--white-color);
+}
+
+.footer__address-list {
+  font-style: normal;
+}
+
+.footer__address-item {
+  margin-bottom: 9px;
+}
+
+.footer__wrapp-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__wrapp-link {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: var(--time);
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    outline: none;
+  }
+}
+
+.footer__wrapp-item {
+  margin-right: 10px;
+}
+
+.footer__body {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__nav {
+  font-family: 'Roboto', sans-serif;
+  color: var(--white-color);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer__link-address {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer__wrapp {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+}
+
+.footer__text {
+  color: var(--white-color);
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.footer__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__input {
+  background-color: #2f303a;
+  border: 1px solid var(--grey-color);
+  width: 285px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  color: var(--white-color);
+}
+
+.footer__button {
+  margin-left: 12px;
+  padding: 10px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__icon {
+  margin-left: 10px;
+}
+
+/* .link-svg-footer:hover,
+.link-svg-footer:focus {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  outline: none;
+  transition: var(--time);
+} */
