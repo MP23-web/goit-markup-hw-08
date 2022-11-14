@@ -17,13 +17,8 @@
     <header class="header-main">
       <div class="container">
         <div class="header">
-          <a href="" class="link logo">Web<span class="header-main__accent">Studio</span></a>
-          <button class="burger js-open-menu">
-            <svg class="burger__img" width="19" height="19">
-              <use href="./images/icons.svg#menu"></use>
-            </svg>
-          </button>
-          <nav>
+          <nav class="header__nav">
+            <a href="" class="link logo">Web<span class="header-main__accent">Studio</span></a>
             <ul class="site-nav list">
               <li class="header-main__nav"><a href="#" class="link header current">Студія</a></li>
               <li class="header-main__nav">
@@ -34,7 +29,7 @@
           </nav>
 
           <ul class="auth-nav list">
-            <li class="header-main__nav">
+            <li class="auth-nav__list">
               <a href="mailto:info@devstudio.com" class="link header"
                 ><svg class="icon header-main__icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope-hover"></use></svg
@@ -50,6 +45,11 @@
             </li>
           </ul>
         </div>
+        <button class="burger js-open-menu">
+          <svg class="burger__img" width="19" height="19">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
 
       <div class="mob-menu js-menu-container">
@@ -100,7 +100,7 @@
         <div class="container">
           <h2 class="visually-hidden">Наші особливості</h2>
           <div>
-            <ul class="social-link features__list">
+            <ul class="features__list">
               <li class="features__item">
                 <a class="features__link-svg" href="#">
                   <div class="features__wrapp">
@@ -446,45 +446,45 @@
       <section class="clients section-title">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
-          <ul class="social-link clients__list">
+          <ul class="clients__list">
             <li class="clients__item">
               <a class="clients__svg-link" href="#">
-                <svg class="icon" width="106" height="60">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-clients-1svg"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__svg-link" href="#">
-                <svg class="icon" width="106" height="60">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-clients-2svg"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__svg-link" href="#">
-                <svg class="icon" width="106" height="60">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-clients-3svg"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__svg-link" href="#">
-                <svg class="icon" width="106" height="60">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-clients-4svg"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__svg-link" href="#">
-                <svg class="icon" width="106" height="60">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-clients-5svg"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__svg-link" href="#">
-                <svg class="icon" width="106" height="60">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-clients-6svg"></use>
                 </svg>
               </a>
@@ -492,10 +492,10 @@
           </ul>
         </div>
       </section>
-      <footer class="footer section">
-        <div class="position">
-          <div class="footer__body container">
-            <div class="footer__logo-address">
+      <footer class="footer">
+        <div class="container content">
+          <div class="position">
+            <div class="footer__body">
               <a class="link footer__logo" href="">Web<span class="footer__accent">Studio</span></a>
               <address>
                 <ul class="footer__address-list">
@@ -521,54 +521,52 @@
                   </li>
                 </ul>
               </address>
-              <div class="footer__network">
-                <p class="footer__text">ПРИЄДНУЙТЕСЬ</p>
-                <ul class="footer__wrapp-list">
-                  <li class="footer__wrapp-item">
-                    <a class="footer__wrapp-link" href="#">
-                      <svg class="icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagramsvg"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="footer__wrapp-item">
-                    <a class="footer__wrapp-link" href="#">
-                      <svg class="icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-twittersvg"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="footer__wrapp-item">
-                    <a class="footer__wrapp-link" href="#">
-                      <svg class="icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebooksvg"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="footer__wrapp-item">
-                    <a class="footer__wrapp-link" href="#">
-                      <svg class="icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedinsvg"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </div>
-            <div class="position-first">
-              <div class="footer__wrapp">
-                <p class="footer__text">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
-                <form class="footer__form">
-                  <input class="footer__input" type="email" placeholder="E-mail" />
-                  <button class="button footer__button" type="submit">
-                    Підписатися
-                    <svg class="footer__icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-icon-send-1"></use>
+            <div class="footer__network">
+              <p class="footer__text">ПРИЄДНУЙТЕСЬ</p>
+              <ul class="footer__wrapp-list">
+                <li class="footer__wrapp-item">
+                  <a class="footer__wrapp-link" href="#">
+                    <svg class="icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagramsvg"></use>
                     </svg>
-                  </button>
-                </form>
-              </div>
+                  </a>
+                </li>
+                <li class="footer__wrapp-item">
+                  <a class="footer__wrapp-link" href="#">
+                    <svg class="icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twittersvg"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__wrapp-item">
+                  <a class="footer__wrapp-link" href="#">
+                    <svg class="icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebooksvg"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__wrapp-item">
+                  <a class="footer__wrapp-link" href="#">
+                    <svg class="icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedinsvg"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="footer__wrapp">
+            <p class="footer__text">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+            <form class="footer__form">
+              <input class="footer__input" type="email" placeholder="E-mail" />
+              <button class="button footer__button" type="submit">
+                Підписатися
+                <svg class="footer__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send-1"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </footer>
