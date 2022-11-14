@@ -5,17 +5,34 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  // max-width: 1200px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .link {
@@ -25,10 +42,19 @@ body {
 }
 
 .social-link {
-  display: flex;
+  // display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-bottom: 30px;
+  }
 }
 
 .icon {
@@ -38,11 +64,15 @@ body {
 .section-title {
   display: flex;
   color: #212121;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   justify-content: center;
   margin-bottom: 50px;
   padding-top: 0;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 
 .link-svg {
